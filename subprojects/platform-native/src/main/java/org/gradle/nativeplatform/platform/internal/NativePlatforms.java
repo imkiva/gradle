@@ -50,6 +50,7 @@ public class NativePlatforms {
         platforms.add(createPlatform(windows, x86));
         platforms.add(createPlatform(windows, x64));
         platforms.add(createPlatform(windows, armv7));
+        platforms.add(createPlatform(windows, aarch64));
         platforms.add(createPlatform(windows, ia64));
 
         platforms.add(createPlatform(freebsd, x86));
