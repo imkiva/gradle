@@ -21,7 +21,10 @@ plugins {
 description = "Logging API"
 
 gradlebuildJava.usedInWorkers()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(libs.slf4jApi)
 

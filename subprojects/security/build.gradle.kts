@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Shared classes for projects requiring GPG support"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(project(":core-api"))
     api(project(":resources"))

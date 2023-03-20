@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Adds support for generating parsers from Antlr grammars."
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

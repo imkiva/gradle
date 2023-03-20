@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Adds support for building Groovy projects"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":build-option"))

@@ -6,7 +6,10 @@ plugins {
 }
 
 description = "The collector project for the 'integ-tests' portion of the Gradle distribution"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     integTestImplementation(project(":internal-testing"))
     integTestImplementation(project(":base-services"))

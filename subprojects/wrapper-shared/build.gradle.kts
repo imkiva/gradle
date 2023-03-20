@@ -5,7 +5,10 @@ plugins {
 description = "Utility code shared between the wrapper and the Gradle distribution"
 
 gradlebuildJava.usedInWorkers()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
 
     testImplementation(project(":base-services"))

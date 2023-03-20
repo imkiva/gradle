@@ -21,7 +21,10 @@ plugins {
 description = "Utilities for working with temporary files & directories"
 
 gradlebuildJava.usedInWorkers()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-annotations"))
     implementation(project(":base-services"))

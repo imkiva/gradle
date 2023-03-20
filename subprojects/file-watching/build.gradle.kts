@@ -4,6 +4,11 @@ plugins {
 
 description = "File system watchers for keeping the VFS up-to-date"
 
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
 dependencies {
     api(project(":snapshots"))
 

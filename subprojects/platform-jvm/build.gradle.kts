@@ -2,7 +2,10 @@ plugins {
     id("gradlebuild.distribution.api-java")
     id("gradlebuild.distribution.api-kotlin")
 }
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":base-services-groovy"))

@@ -35,7 +35,10 @@ configurations {
     }
     docsTestRuntimeClasspath.extendsFrom(integTestDistributionRuntimeOnly)
 }
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     // generate Javadoc for the full Gradle distribution
     runtimeOnly project(":distributions-full")

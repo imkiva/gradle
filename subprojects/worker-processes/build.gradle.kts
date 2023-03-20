@@ -5,7 +5,10 @@ plugins {
 description = "Infrastructure that bootstraps a worker process"
 
 gradlebuildJava.usedInWorkers()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

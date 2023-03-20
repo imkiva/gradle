@@ -5,7 +5,10 @@ plugins {
 description = "Defines which JARs go into the core part (libs/*.jar) of a Gradle distribution (NOT libs/plugins/*.jar)."
 
 javaPlatform.allowDependencies()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     runtime(project(":installation-beacon"))
     runtime(project(":api-metadata"))

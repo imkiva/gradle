@@ -6,7 +6,10 @@ description = """Persistent caches on disk and cross process locking.
     | Mostly for persisting Maps to the disk.
     | Also contains implementations for in-memory caches in front of the disk cache.
 """.trimMargin()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":messaging"))

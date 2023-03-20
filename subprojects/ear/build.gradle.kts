@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Adds support for assembling web application EAR files"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":core"))

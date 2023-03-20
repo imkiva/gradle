@@ -4,7 +4,10 @@ plugins {
 }
 
 description = "Implementation of build cache controller and factories"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(project(":build-cache-base"))
     api(project(":snapshots"))

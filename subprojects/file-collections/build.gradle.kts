@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Implementation of types that represent containers of files"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":base-services-groovy"))

@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Included build controller and composite build infrastructure"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":enterprise-operations"))

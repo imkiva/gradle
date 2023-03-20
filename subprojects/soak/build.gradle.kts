@@ -1,7 +1,10 @@
 plugins {
     id("gradlebuild.internal.kotlin")
 }
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     testFixturesImplementation(project(":base-services"))
     testFixturesImplementation(project(":core"))

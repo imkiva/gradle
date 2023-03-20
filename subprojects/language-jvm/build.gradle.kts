@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Contains some base and shared classes for JVM language support, like AbstractCompile class and BaseForkOptions class"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":files"))

@@ -6,7 +6,10 @@ plugins {
 description = "Base tools to work with files"
 
 gradlebuildJava.usedInWorkers()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-annotations"))
     implementation(project(":functional"))

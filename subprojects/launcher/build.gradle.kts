@@ -4,7 +4,10 @@ plugins {
 }
 
 description = "Implementation for launching, controlling and communicating with Gradle Daemon from CLI and TAPI"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":functional"))

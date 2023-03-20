@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Collection of test fixtures for both unit tests and integration tests, internal use only"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":native"))

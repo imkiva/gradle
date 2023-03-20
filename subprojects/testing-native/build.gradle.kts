@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Plugins, tasks and domain objects for testing native code"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":native"))

@@ -17,7 +17,10 @@
 plugins {
     id("gradlebuild.internal.java")
 }
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":model-core"))
     implementation(project(":base-services"))

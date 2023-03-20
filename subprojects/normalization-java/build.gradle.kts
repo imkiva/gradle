@@ -4,7 +4,10 @@ plugins {
 }
 
 description = "API extraction for Java"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-annotations"))
     implementation(project(":hashing"))

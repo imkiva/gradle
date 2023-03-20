@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "JVM invocation and inspection abstractions"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":core-api"))

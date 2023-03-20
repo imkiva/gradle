@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Version control integration (with git) for source dependencies"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":messaging"))

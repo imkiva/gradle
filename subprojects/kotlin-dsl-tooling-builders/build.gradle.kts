@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Kotlin DSL Tooling Builders for IDEs"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":kotlin-dsl"))
 

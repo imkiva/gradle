@@ -12,6 +12,8 @@ configurations.compileOnly { extendsFrom(flamegraph) }
 
 repositories {
     googleApisJs()
+    mavenLocal()
+    mavenCentral()
 }
 
 dependencies {

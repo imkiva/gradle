@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Plugins and integration with code quality (Checkstyle, PMD, CodeNarc)"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

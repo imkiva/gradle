@@ -5,7 +5,10 @@ plugins {
 }
 
 description = "Performance tests for the Gradle build tool"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     performanceTestImplementation(project(":base-services"))
     performanceTestImplementation(project(":enterprise-operations"))

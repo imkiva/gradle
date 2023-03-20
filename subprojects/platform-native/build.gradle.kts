@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Plugins, tasks and compiler infrastructure for compiling/linking code"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

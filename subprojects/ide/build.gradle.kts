@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Plugins and model builders for integration with Eclipse and IntelliJ IDEs"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

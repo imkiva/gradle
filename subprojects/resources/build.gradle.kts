@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "A set of general-purpose resource abstractions"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":enterprise-operations"))

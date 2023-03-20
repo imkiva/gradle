@@ -9,7 +9,10 @@ of its abstractions with JVM-specific abstractions or implementations.
 This project is a implementation dependency of many other testing-related subprojects in the Gradle build, and is a necessary
 dependency for any projects working directly with Test tasks.
 """
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":messaging"))

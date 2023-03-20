@@ -4,7 +4,10 @@ plugins {
 }
 
 description = "Build operations consumed by the Gradle Enterprise plugin"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(project(":build-operations"))
     api(project(":enterprise-workers"))

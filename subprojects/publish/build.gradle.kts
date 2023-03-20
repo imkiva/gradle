@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Base plugin for the maven and ivy publish plugins. Defines the publishing extension."
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":functional"))

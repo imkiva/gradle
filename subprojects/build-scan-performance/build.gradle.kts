@@ -6,7 +6,10 @@ plugins {
 description = """Performance tests for the build scan plugin
     | Run as part of the GE pipeline.
     | """.trimMargin()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     testFixturesApi(project(":internal-performance-testing"))
     testFixturesApi(libs.commonsIo)

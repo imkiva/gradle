@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Implementation of configuration model types and annotation metadata handling (Providers, software model, conventions)"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(project(":core-api"))
     api(project(":problems"))

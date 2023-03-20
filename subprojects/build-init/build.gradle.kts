@@ -6,7 +6,10 @@ plugins {
 description = """This project contains the Build Init plugin, which is automatically applied to the root project of every build, and provides the init and wrapper tasks.
 
 This project should NOT be used as an implementation dependency anywhere (except when building a Gradle distribution)."""
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

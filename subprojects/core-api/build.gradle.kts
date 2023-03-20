@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Public and internal 'core' Gradle APIs that are required by other subprojects"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(project(":process-services"))
 

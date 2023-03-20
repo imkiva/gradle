@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Kotlin DSL Provider Plugins"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":kotlin-dsl"))
 

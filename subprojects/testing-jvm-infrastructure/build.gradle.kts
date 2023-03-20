@@ -25,7 +25,10 @@ and executing tests.
 Few projects should need to depend on this module directly. Most external interactions with this module are through the
 various implementations of WorkerTestClassProcessorFactory.
 """
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":messaging"))

@@ -9,7 +9,10 @@ group = "org.gradle.kotlin"
 version = "4.0.11"
 
 base.archivesName = "plugins"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     compileOnly(project(":base-services"))
     compileOnly(project(":logging"))

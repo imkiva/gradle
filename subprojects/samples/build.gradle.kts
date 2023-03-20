@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Integration tests for our documentation snippets (aka samples)"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     integTestImplementation(project(":base-services"))
     integTestImplementation(project(":core-api"))

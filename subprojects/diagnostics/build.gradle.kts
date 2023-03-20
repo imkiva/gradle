@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Contains project diagnostics or report tasks, e.g. help, project report, dependency report and similar"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":functional"))

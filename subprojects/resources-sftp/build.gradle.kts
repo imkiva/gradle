@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Implementation for interacting with repositories over sftp"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":core-api"))

@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Gradle plugin development plugins"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

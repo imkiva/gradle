@@ -5,7 +5,10 @@ plugins {
 description = "Logging API consumed by the Gradle Enterprise plugin"
 
 gradlebuildJava.usedInWorkers()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(project(":logging-api"))
 

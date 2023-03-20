@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Plugins for integration with native projects in XCode and Visual Studio IDEs"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

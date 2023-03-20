@@ -10,7 +10,10 @@ testing-related abstract base types and interfaces for things like Test tasks, l
 
 This project is a implementation dependency of many other testing-related subprojects in the Gradle build.
 """
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":messaging"))

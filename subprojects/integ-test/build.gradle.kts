@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Integration tests which don't fit anywhere else - should probably be split up"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     integTestImplementation(project(":base-services"))
     integTestImplementation(project(":build-option"))

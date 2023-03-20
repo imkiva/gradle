@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Plugin and integration with JaCoCo code coverage"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

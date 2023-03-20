@@ -5,3 +5,7 @@ plugins {
 description = "Utilities for parsing command line arguments"
 
 gradlebuildJava.usedInWorkers()
+repositories {
+    mavenLocal()
+    mavenCentral()
+}

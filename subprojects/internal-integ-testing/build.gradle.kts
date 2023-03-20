@@ -8,6 +8,11 @@ plugins {
 
 description = "Collection of test fixtures for integration tests, internal use only"
 
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
 dependencies {
     api(libs.jettyWebApp) {
         because("Part of the public API via HttpServer")

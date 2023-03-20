@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Implementation for interacting with S3 repositories"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":core-api"))

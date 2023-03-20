@@ -17,7 +17,10 @@
 plugins {
     id("gradlebuild.distribution.api-java")
 }
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(libs.javaPoet)
 

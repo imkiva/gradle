@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Plugins for building Scala code with Gradle."
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Collection of test fixtures and tests for architecture testing Gradle code"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(platform(project(":distributions-dependencies")))
     api(libs.archunitJunit5) {

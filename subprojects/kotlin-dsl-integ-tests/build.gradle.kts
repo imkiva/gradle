@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Kotlin DSL Integration Tests"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     testImplementation(testFixtures(project(":kotlin-dsl")))
 

@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Implementation for interacting with Google Cloud Storage (GCS) repositories"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

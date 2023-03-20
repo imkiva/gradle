@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Provides high-level insights into a Gradle build (--profile)"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":messaging"))

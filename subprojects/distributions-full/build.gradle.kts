@@ -5,7 +5,10 @@ plugins {
 }
 
 description = "The collector project for the entirety of the Gradle distribution"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     coreRuntimeOnly(platform(project(":core-platform")))
 

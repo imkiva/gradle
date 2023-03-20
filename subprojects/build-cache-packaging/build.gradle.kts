@@ -4,7 +4,10 @@ plugins {
 }
 
 description = "Package build cache results"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(project(":build-cache-base"))
     api(project(":snapshots"))

@@ -7,7 +7,10 @@ plugins {
 description = "Bootstraps a Gradle build initiated by the gradlew script"
 
 gradlebuildJava.usedInWorkers()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":cli"))
     implementation(project(":wrapper-shared"))

@@ -10,7 +10,10 @@ val configurationCacheReportPath by configurations.creating {
     isCanBeConsumed = false
     attributes { attribute(DocsType.DOCS_TYPE_ATTRIBUTE, objects.named("configuration-cache-report")) }
 }
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 // You can have a faster feedback loop by running `configuration-cache-report` as an included build
 // See https://github.com/gradle/configuration-cache-report#development-with-gradlegradle-and-composite-build
 dependencies {

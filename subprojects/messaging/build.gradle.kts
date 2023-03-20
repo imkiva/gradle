@@ -5,7 +5,10 @@ plugins {
 description = "Implementation of messaging between Gradle processes"
 
 gradlebuildJava.usedInWorkers()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
 

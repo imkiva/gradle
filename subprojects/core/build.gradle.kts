@@ -16,6 +16,11 @@ tasks.classpathManifest {
     optionalProjects.add("gradle-runtime-api-info")
 }
 
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":base-services-groovy"))

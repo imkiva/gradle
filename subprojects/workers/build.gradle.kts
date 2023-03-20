@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Infrastructure for starting and managing worker processes"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":messaging"))

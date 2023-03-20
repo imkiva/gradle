@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Execution engine that takes a unit of work and makes it happen"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":build-cache"))

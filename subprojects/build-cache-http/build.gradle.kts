@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Implementation for interacting with HTTP build caches"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":build-cache"))

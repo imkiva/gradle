@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Services and utilities needed by Gradle Enterprise plugin"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(project(":base-services"))
     api(project(":enterprise-operations"))

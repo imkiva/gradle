@@ -1,7 +1,10 @@
 plugins {
     id("gradlebuild.distribution.api-java")
 }
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

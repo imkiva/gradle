@@ -4,7 +4,10 @@ plugins {
 }
 
 description = "Common shared build cache classes"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-annotations"))
     implementation(project(":files"))

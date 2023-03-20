@@ -5,7 +5,10 @@ plugins {
 description = "Process execution abstractions."
 
 gradlebuildJava.usedInWorkers()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
 

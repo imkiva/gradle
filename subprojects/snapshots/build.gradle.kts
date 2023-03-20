@@ -4,7 +4,10 @@ plugins {
 }
 
 description = "Tools to take immutable, comparable snapshots of files and other things"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(project(":files"))
     api(project(":hashing"))

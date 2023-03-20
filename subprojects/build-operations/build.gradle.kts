@@ -6,7 +6,10 @@ plugins {
 description = "Build operations are our way to inspect the process of executing a build"
 
 gradlebuildJava.usedInWorkers()
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-annotations"))
     implementation(libs.slf4jApi)

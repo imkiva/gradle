@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Plugin for cryptographic signing of publications, artifacts or files."
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

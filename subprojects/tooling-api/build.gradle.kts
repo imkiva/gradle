@@ -19,7 +19,10 @@ shadedJar {
     unshadedPackages = listOf("org.gradle", "org.slf4j", "sun.misc")
     ignoredPackages = setOf("org.gradle.tooling.provider.model")
 }
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     shadedImplementation(libs.slf4jApi)
 

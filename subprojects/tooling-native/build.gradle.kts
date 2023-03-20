@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Tooling API model builders for native builds"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":core-api"))

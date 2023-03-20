@@ -14,6 +14,11 @@ tasks.named<JavaCompile>("jmhCompileGeneratedClasses") {
     options.release = 8
 }
 
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
 dependencies {
     api(project(":files"))
 

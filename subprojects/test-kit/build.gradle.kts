@@ -6,7 +6,10 @@ plugins {
 }
 
 description = "A library that aids in testing Gradle plugins and build logic in general"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":core-api"))

@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Groovy specific adaptations to the model management."
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":core-api"))

@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "The collector project for the 'jvm' portion of the Gradle distribution"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     coreRuntimeOnly(platform(project(":core-platform")))
 

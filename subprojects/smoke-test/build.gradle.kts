@@ -18,7 +18,10 @@ addDependenciesAndConfigurations("smoke")
 
 val smokeTestImplementation: Configuration by configurations
 val smokeTestDistributionRuntimeOnly: Configuration by configurations
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     smokeTestImplementation(project(":base-services"))
     smokeTestImplementation(project(":core-api"))

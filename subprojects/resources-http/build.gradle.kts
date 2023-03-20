@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Implementation for interacting with repositories over HTTP"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     api(project(":resources"))
     implementation(project(":base-services"))

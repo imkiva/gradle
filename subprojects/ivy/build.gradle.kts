@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Publishing plugin for Ivy repositories"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":logging"))

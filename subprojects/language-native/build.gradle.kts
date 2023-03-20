@@ -3,7 +3,10 @@ plugins {
 }
 
 description = "Plugins and domain objects for building different native languages"
-
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
 dependencies {
     implementation(project(":base-services"))
     implementation(project(":messaging"))
